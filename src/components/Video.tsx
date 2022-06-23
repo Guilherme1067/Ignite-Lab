@@ -47,6 +47,7 @@ export const Video = (props: VideoProps) => {
     variables: {
       slug: props.lessonSlug,
     },
+    fetchPolicy: "no-cache",
   });
 
   console.log(data);
